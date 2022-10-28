@@ -24,6 +24,9 @@
           <a href="#">Popular</a>
           <a href="#">Trending</a>
           <a href="#">Categories</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </div>
       <div class="main-article">
@@ -35,8 +38,8 @@
             power of the platforms back into the hands of the people. But is it
             really fulfilling its promise?
           </p>
-          <button class="main-article-button">Read More</button>
         </div>
+        <button class="main-article-button">Read More</button>
       </div>
       <div class="news">
         <div class="main-title">New</div>
@@ -46,6 +49,7 @@
             Will hydrogen-fueled cars ever catch up to EVs?
           </div>
         </div>
+        <hr class="solid" />
         <div class="news2">
           <div class="news-title">The Downsides of AI Artistry</div>
           <div class="news-content">
@@ -53,6 +57,7 @@
             generation?
           </div>
         </div>
+        <hr class="solid" />
         <div class="news3">
           <div class="news-title">Is VC Funding Drying Up?</div>
           <div class="news-content">
@@ -62,37 +67,53 @@
         </div>
       </div>
       <div class="articles">
-        <div class="article1">
+        <div class="article">
           <div class="article-img">
-            <img src="assets/images/image-retro-pcs.jpg" alt="" srcset="">
+            <img src="assets/images/image-retro-pcs.jpg" alt="retro laptop picture"/>
           </div>
-          <div class="article-number">01</div>
-          <div class="article-title">Reviving Retro PCs</div>
-          <div class="article-content">
-            What happens when old PCs are given modern upgrades?
+          <div class="content">
+            <div class="article-number">01</div>
+            <div class="article-title">Reviving Retro PCs</div>
+            <div class="article-content">
+              What happens when old PCs are given modern upgrades?
+            </div>
           </div>
         </div>
-        <div class="article2">
+        <div class="article">
           <div class="article-img">
-            <img src="assets/images/image-top-laptops.jpg" alt="" srcset="">
+            <img src="assets/images/image-top-laptops.jpg" alt="keyboard picture"/>
           </div>
-          <div class="article-number">02</div>
-          <div class="article-title">Top 10 Laptops of 2022</div>
-          <div class="article-content">
-            Our best picks for various needs and budgets.
+          <div class="content">
+            <div class="article-number">02</div>
+            <div class="article-title">Top 10 Laptops of 2022</div>
+            <div class="article-content">
+              Our best picks for various needs and budgets.
+            </div>
           </div>
         </div>
-        <div class="article3">
+        <div class="article">
           <div class="article-img">
-            <img src="assets/images/image-gaming-growth.jpg" alt="" srcset="">
+            <img src="assets/images/image-gaming-growth.jpg" alt="game controller" />
           </div>
-          <div class="article-number">03</div>
-          <div class="article-title">The Growth of Gaming</div>
-          <div class="article-content">
-            How the pandemic has sparked fresh opportunities.
+          <div class="content">
+            <div class="article-number">03</div>
+            <div class="article-title">The Growth of Gaming</div>
+            <div class="article-content">
+              How the pandemic has sparked fresh opportunities.
+            </div>
           </div>
         </div>
       </div>
     </main>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>
