@@ -4,18 +4,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: pointer;
 }
 
 body {
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem;
   font-family: "Inter", sans-serif;
 }
+
+/*navbar styles*/
 .navbar {
+  padding: 1rem 0 1rem 0;
   display: inline-flex;
   gap: 2rem;
 }
 .navbar a {
+  cursor: pointer;
   text-decoration: none;
   color: hsl(233, 8%, 79%);
   font-size: 1rem;
@@ -25,11 +28,125 @@ body {
 .navbar a:hover {
   color :hsl(35, 77%, 62%);
 }
+
+/*main article styles*/
+.main-article {
+  padding: 2rem 0 2rem 0;
+}
+.main-article-image{
+  padding-top: 2rem;
+  background-image: url(assets/images/image-web-3-mobile.jpg);
+  width: 20rem;
+  height: 20rem;
+  background-size: cover;
+  padding: 2rem;
+}
+.main-article-title {
+  padding:1rem 0 1rem 0 ;
+  top: 2rem;
+  color: hsl(240, 100%, 5%);
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.main-article-content {
+  color: hsl(236, 13%, 42%);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding-bottom:1rem ;
+}
+
+.main-article-button{
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  padding:1rem 2rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+/*news styles*/
+
+.news {
+  background-color: hsl(240, 100%, 5%);
+  padding: 1rem;
+}
+
+.main-title {
+  color: hsl(35, 77%, 62%);
+  font-weight: 800;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+.news-title {
+  color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 1rem 0 1rem 0;
+}
+.news-content {
+  color: hsl(236, 13%, 42%);
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+}
+
+/* Solid border */
+.news hr.solid {
+  border-top: 2px  hsl(236, 13%, 42%);
+} 
+
+/*articles styles*/
+.articles {
+  padding: 2rem 0 2rem 0;
+  
+}
+
+.article-img img{
+  width: 7rem;
+  height: 9rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0 1rem 0;
+}
+
+.content {
+padding: 0 1rem 0 1rem;
+}
+.article-number {
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: hsl(233, 8%, 79%);
+  padding-bottom: 0.8rem;
+}
+.article-title {
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+.article-content {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: hsl(236, 13%, 42%);
+}
+
 @media screen and (max-width: 600px) {
   .navbar {
     display: none;
   }
 }
+
+
+@media screen and (min-width: 601px) {
+ 
+
+  
+
+
 .header {
   grid-area: header;
   display: flex;
@@ -61,3 +178,14 @@ body {
   padding: 20px 0;
   font-size: 30px;
 }
+
+.main-article-image{
+  background-image: url(assets/images/image-web-3-desktop.jpg);
+  width: 53rem;
+  height: 20rem;
+}
+main {
+  margin: 3rem 5rem 3rem 5rem;
+}
+}
+
