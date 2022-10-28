@@ -1,28 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
+body {
+  padding: 2rem 4rem 2rem 4rem;
+  font-family: "Inter", sans-serif;
+}
+.navbar {
+  display: inline-flex;
+  gap: 2rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: hsl(233, 8%, 79%);
+  font-size: 1rem;
+  font-weight: 400;
+}
 
-.header { grid-area: header; }
-.main-article{ grid-area: main; }
-.news { grid-area: news; }
-.articles { grid-area: article; }
+.navbar a:hover {
+  color :hsl(35, 77%, 62%);
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+}
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+}
+.main-article {
+  grid-area: main;
+}
+.news {
+  grid-area: news;
+}
+.articles {
+  grid-area: article;
+}
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'main main main main news news'
-    'article article article article article article';
+    "header header header header header header"
+    "main main main main news news"
+    "article article article article article article";
   gap: 10px;
-  background-color: #2196F3;
+  background-color: hsl(36, 100%, 99%);
   padding: 10px;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
