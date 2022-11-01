@@ -142,8 +142,37 @@ p {
 }
 
 @media (min-width:1024px){
-  .main-article{
+  .header {
+    padding: 2rem 1.25rem;
+  }
+
+  .header nav {
+    opacity: 1;
+    z-index: auto;
+    width: 100%;
+  }
+  .top-section {
     display: flex;
     gap: 2rem;
+  }
+
+  .main-article h1 {
+    font-size: 3rem;
+  }
+
+  .main-article > div:first-child article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    place-items: center;
+    margin-top: 2rem;
+  }
+
+  .main-article > div:last-child {
+    margin-top: 0;
+  }
+
+  .articles {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
