@@ -68,6 +68,7 @@ p {
   outline: none;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  transition: all 0.3s ease-in-out;
 }
 .main-article button:hover {
   background-color: hsl(240, 100%, 5%);
@@ -105,34 +106,44 @@ p {
 }
 
 /*articles styles*/
-.articles {
+.articles  {
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  gap: 1.25rem;
-  padding: 1.25rem;
+  padding: 3rem 0 1.25rem 0;
 }
+.articles article{
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding-bottom: 2rem;
+}
+
 
 .articles span {
   color: hsl(236, 13%, 42%);
   font-weight: 800;
   font-size: 2.5rem;
   opacity: 50%;
-  padding-top: 0;
-
+  padding: 0.9rem 0 0.9rem 0;
 }
 
 .articles article img{
   width: 35%;
 }
 
-.articles article{
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
 .articles h4 {
   font-size: 1.25rem;
   color: hsl(240, 100%, 5%);
+  padding: 0.9rem 0 0.9rem 0;
 }
 
+.articles p{
+  font-size: 0.9rem;
+}
+
+@media (min-width:1024px){
+  .main-article{
+    display: flex;
+    gap: 2rem;
+  }
+}
