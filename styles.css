@@ -4,188 +4,135 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  padding: 2rem;
   font-family: "Inter", sans-serif;
 }
 
-/*navbar styles*/
-.navbar {
-  padding: 1rem 0 1rem 0;
-  display: inline-flex;
-  gap: 2rem;
-}
-.navbar a {
-  cursor: pointer;
-  text-decoration: none;
-  color: hsl(233, 8%, 79%);
+body {
   font-size: 1rem;
-  font-weight: 400;
-}
-
-.navbar a:hover {
-  color :hsl(35, 77%, 62%);
-}
-
-/*main article styles*/
-.main-article {
-  padding: 2rem 0 2rem 0;
-}
-.main-article-image{
-  padding-top: 2rem;
-  background-image: url(assets/images/image-web-3-mobile.jpg);
-  width: 20rem;
-  height: 20rem;
-  background-size: cover;
-  padding: 2rem;
-}
-.main-article-title {
-  padding:1rem 0 1rem 0 ;
-  top: 2rem;
-  color: hsl(240, 100%, 5%);
-  font-weight: 800;
-  font-size: 2.5rem;
-}
-
-.main-article-content {
-  color: hsl(236, 13%, 42%);
-  font-size: 0.9rem;
-  line-height: 1.6;
-  padding-bottom:1rem ;
-}
-
-.main-article-button{
-  background-color: hsl(5, 85%, 63%);
-  color: hsl(36, 100%, 99%);
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  padding:1rem 2rem;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-}
-
-/*news styles*/
-
-.news {
-  background-color: hsl(240, 100%, 5%);
+  max-width: 1200px;
+  margin: auto;
   padding: 1rem;
 }
 
-.main-title {
-  color: hsl(35, 77%, 62%);
-  font-weight: 800;
-  font-size: 2rem;
-  padding-top: 1rem;
-}
-.news-title {
-  color: hsl(36, 100%, 99%);
-  font-weight: 700;
-  font-size: 1.3rem;
-  padding: 1rem 0 1rem 0;
-}
-.news-content {
-  color: hsl(236, 13%, 42%);
-  font-weight: 400;
-  padding-bottom: 1.5rem;
+/*header styles*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
 }
 
-/* Solid border */
-.news hr.solid {
-  border-top: 2px  hsl(236, 13%, 42%);
-} 
+.header nav {
+  display: none;
+}
+
+
+/*main article style*/
+.main-article {
+  padding-top: 0;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+p {
+  line-height: 1.8;
+  color: hsl(236, 13%, 42%);
+}
+
+.main-article h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+  margin: 1rem 0;
+}
+
+.main-article p {
+  margin-bottom: 1rem;
+}
+
+.main-article button {
+  background-color: hsl(5, 85%, 63%);
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border: none;
+  font-weight: 400;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.main-article button:hover {
+  background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
+}
+.news {
+  background-color: hsl(240, 100%, 5%);
+  margin-top: 2rem;
+  padding: 1.25rem;
+}
+
+.news h2 {
+  color: hsl(35, 77%, 62%);
+  margin-bottom: 1rem;
+}
+
+.news h3 {
+  color: hsl(36, 100%, 99%);
+  margin-bottom: 0.5rem;
+}
+
+.news h3:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
+.news p {
+  margin-bottom: 0.5rem;
+  color: hsl(233, 8%, 79%);
+}
+
+.news .new:not(:last-child) {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+  margin-bottom: 1rem;
+}
 
 /*articles styles*/
 .articles {
-  padding: 2rem 0 2rem 0;
-  
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 1.25rem;
+  padding: 1.25rem;
 }
 
-.article-img img{
-  width: 7rem;
-  height: 9rem;
-}
-
-.article {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem 0 1rem 0;
-}
-
-.content {
-padding: 0 1rem 0 1rem;
-}
-.article-number {
+.articles span {
+  color: hsl(236, 13%, 42%);
   font-weight: 800;
   font-size: 2.5rem;
-  color: hsl(233, 8%, 79%);
-  padding-bottom: 0.8rem;
-}
-.article-title {
-  font-weight: 800;
-  padding-bottom: 1rem;
-}
-.article-content {
-  line-height: 1.6;
-  font-size: 1rem;
-  color: hsl(236, 13%, 42%);
+  opacity: 50%;
+  padding-top: 0;
+
 }
 
-@media screen and (max-width: 600px) {
-  .navbar {
-    display: none;
-  }
+.articles article img{
+  width: 35%;
 }
 
-
-@media screen and (min-width: 601px) {
- 
-
-  
-
-
-.header {
-  grid-area: header;
+.articles article{
   display: flex;
-  justify-content: space-between;
-}
-.main-article {
-  grid-area: main;
-}
-.news {
-  grid-area: news;
-}
-.articles {
-  grid-area: article;
+  align-items: center;
+  gap: 1.25rem;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "main main main main news news"
-    "article article article article article article";
-  gap: 10px;
-  background-color: hsl(36, 100%, 99%);
-  padding: 10px;
-}
-
-.grid-container > div {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-.main-article-image{
-  background-image: url(assets/images/image-web-3-desktop.jpg);
-  width: 53rem;
-  height: 20rem;
-}
-main {
-  margin: 3rem 5rem 3rem 5rem;
-}
+.articles h4 {
+  font-size: 1.25rem;
+  color: hsl(240, 100%, 5%);
 }
 
